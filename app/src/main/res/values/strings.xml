@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Smart Kids</string>
+    <string name="main_background">main background</string>
+    <string name="smart_kids">Smart Kids</string>
+    <string name="shape">Shapes</string>
+    <string name="shape_group">shape Group</string>
+    <string name="color_text">Colors</string>
+    <string name="object_1">object 1</string>
+    <string name="object_2">object 2</string>
+    <string name="object_3">object 3</string>
+
+
+    <string name="you_win">congrats</string>
+    <string name="game_over">Game Over</string>
+    <string name="home_button">home button</string>
+    <string name="restart_button">restart button</string>
+    <string name="home">Home</string>
+    <string name="retry_button">Play again</string>
+    <string name="preference_file_key">com.example.smartkids</string>
+    <string name="saved_high_score_shape_key">high shape score</string>
+    <string name="saved_high_score_color_key">high color score</string>
+    <string name="background_image">background image</string>
+    <string name="color_image">color image</string>
+    <string name="error_image">error image</string>
+    <string name="score_text">Score:</string>
+    <string name="score">Score:</string>
+    <string name="reset_btn">Reset</string>
+    <string name="default_score">10</string>
+    <string name="your_score_text">Your score</string>
+    <string name="best_score_text">Best Score:</string>
+    <string name="default_best_score">20</string>
+</resources>

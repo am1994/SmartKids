@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_size">60sp</dimen>
+    <dimen name="text_size">45sp</dimen>
+    <dimen name="shape_width">200dp</dimen>
+    <dimen name="shape_height">200dp</dimen>
+    <dimen name="object_width">150dp</dimen>
+    <dimen name="object_height">150dp</dimen>
+    <dimen name="score_size">25sp</dimen>
+    <dimen name="score_result">80sp</dimen>
+    <dimen name="your_score_size">45sp</dimen>
+    <dimen name="btn_result_text_size">18sp</dimen>
+</resources>

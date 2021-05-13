@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainFragment"
+    >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/main_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rainbow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relative_shapes"
+
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/relative_colors"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_below="@id/shape_group"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/relative_layout_shape"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="@string/shape"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/shape_group"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/shape_group"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/shape_groupe" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_colors"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451">
+
+        <TextView
+            android:id="@+id/txtColor"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_below="@id/color_group"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/relative_layout_shape"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            tools:text="@string/color_text" />
+
+        <ImageButton
+            android:id="@+id/color_group"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/shape_group"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/color_groupe" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_kids"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/blue_title"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
